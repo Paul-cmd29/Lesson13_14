@@ -15,7 +15,7 @@ namespace lesson13_14
     {
         
         List<string> AllProduct = new List<string> { "IPhone, ID = [1]", "IPad ID = [2]", "Microsoft Surface ID = [3]", "MacBook Pro ID = [4]" };
-        void IProductData.Product()
+        void IProductData.Product()//since the class realize only one interface - so no need to define the interface name
         {
            foreach (string item in AllProduct)
            {
@@ -27,7 +27,7 @@ namespace lesson13_14
         }
             
         
-        void IProductData.AddProduct()
+        void IProductData.AddProduct()//since the class realize only one interface - so no need to define the interface name
         {
             string NewProduct;
             Console.WriteLine("New product info: ");
